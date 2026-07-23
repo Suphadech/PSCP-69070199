@@ -1,6 +1,5 @@
 '''INK'''
 import math as m
-distance = 0
 time = []
 PI_VALUE = 3.1416
 s,n = map(int ,input().split())
