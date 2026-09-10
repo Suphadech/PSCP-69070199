@@ -1,11 +1,15 @@
-'''point'''
-n = int(input())
-total = 0
-for i in range(n):
-    i += 1
-    symbol = input()
-    if symbol == '+':
-        total += 10
-    else:
-        total -= 5
-print(total)
+'''I am a king of brianrots'''
+n,k,t = map(int ,input().split())
+current = 1
+count = 1
+if current == t:
+    print(count)
+else:
+    while True:
+        current = (current - 1 + k) % n + 1
+        if current == 1:
+            break
+        count += 1
+        if current == t:
+            break
+    print(count)
